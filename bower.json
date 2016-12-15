@@ -20,5 +20,8 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "boostrap-sass#^3.3.7"
   }
 }
