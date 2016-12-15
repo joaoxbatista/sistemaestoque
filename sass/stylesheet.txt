@@ -1,0 +1,47 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-chart {
+    width: 69px;
+    height: 69px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon-time {
+    width: 70px;
+    height: 69px;
+    background-position: -84px -5px;
+}
+
+.sprite-icon-users {
+    width: 70px;
+    height: 70px;
+    background-position: -164px -5px;
+}
+
+.sprite-icon-world {
+    width: 69px;
+    height: 70px;
+    background-position: -244px -5px;
+}
+
+.sprite-img-admirada {
+    width: 287px;
+    height: 205px;
+    background-position: -5px -85px;
+}
+
+.sprite-img-tools {
+    width: 430px;
+    height: 288px;
+    background-position: -323px -5px;
+}
+
+.sprite-logo-nav {
+    width: 217px;
+    height: 44px;
+    background-position: -5px -303px;
+}
