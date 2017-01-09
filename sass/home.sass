@@ -1,60 +1,14 @@
-$gray: rgb(250, 250, 250)
-$white: rgb(255, 255, 255)
-$gray1: rgb(220, 220, 220)
-$gray2: rgb(50, 50, 50)
-$purple: rgb(71, 0, 142)
-$purple1: rgb(112, 15, 209)
-$purple2: rgb(180, 100, 240)
-$purple3: rgb(20, 10, 60)
-$bluedark: rgb(20, 10, 60)
+@import 'variables/colors'
+@import 'variables/sizes'
+@import 'components/buttons'
 
-//Tamanho de dispositivos
-$tablets: 768px 
-$desktops: 992px 
-$desktops-large: 1200px 
-
-//Botões
-.button
-	text-decoration: none
-	color: #fff
-	background: linear-gradient($purple1, $purple)
-	border: 1px solid $purple
-	font-weight: bold
-	font-size: 1.2em
-	padding: 10px 25px
-	border-radius: 5px
-	display: block
-	
-	text-align: center
-	margin: 30px auto
-
-	@media screen and (min-width: $tablets)
-		margin: 30px 0px
-		max-width: 250px
-	&:hover
-		text-decoration: none
-		background: linear-gradient($purple, $purple1)
-		color: $white
-
-.button-gray
-
-	color: $purple
-	background: linear-gradient($white, $gray1)
-	border: 1px solid $gray1
-
-	&:hover
-		text-decoration: none
-		background: linear-gradient($gray1, $white)
-		color: $purple
-*
-	font-family: 'Open Sans', sans-serif
 header
 
 	#brand
 		background: linear-gradient($white, $gray)
 		border-bottom: 1px solid  $gray1
 		padding: 20px 0px
-		
+
 		#logo
 			margin: 0 auto
 			@media screen and(min-width: $tablets)
@@ -75,11 +29,13 @@ header
 		min-width: 100%
 		padding: 10px 0px
 		border-bottom: 1px solid $gray1
-		nav 
+		nav
 			ul
 				list-style: none
 				padding-left: 0px
-	
+
+				.active
+					border-bottom: 2px solid $purple
 				li
 					display: block
 					font-size: 1.1em
@@ -89,13 +45,13 @@ header
 					@media screen and (min-width: $tablets)
 						display: inline-block
 
-					
+
 
 					a
 						text-decoration: none
 						color: $gray2
 						font-weight: bold
-	
+
 
 #overview
 	padding: 150px 0px
@@ -120,7 +76,7 @@ header
 	.admirada-logo
 		margin: 0 auto 50px auto
 		display: block
-		
+
 		@media screen and (min-width: $tablets)
 			margin-top: 100px
 			margin-left: 20%
@@ -128,7 +84,7 @@ header
 	background: $purple3
 	position: relative
 	padding: 100px 0px
-	
+
 	h1
 		font-size: 3em
 		line-height: 1.5em
@@ -142,9 +98,9 @@ header
 			text-align: left
 
 	.box
-		
+
 		h2
-			
+
 			font-size: 2.2em
 			text-align: center
 			color: $gray1
@@ -166,19 +122,11 @@ header
 			font-size: 1.2em
 			text-align: justify
 			color: $gray1
-	
+
 #operation
 	position: relative
 	padding: 100px 0px
-	
-	&::after
-		display: block
-		content: " "
-		width: 100%
-		height: 2px
-		background: linear-gradient(to left, $gray 0%, $purple 50%, $gray 100%)
-		position: absolute
-		bottom: 0px
+
 	h1
 		font-size: 3em
 		line-height: 1.5em
@@ -204,7 +152,7 @@ header
 #tobepart
 	background: $bluedark
 	padding: 100px 0px
-	
+
 	h1
 		font-size: 3em
 		line-height: 1.5em
@@ -234,7 +182,7 @@ header
 
 	.contact
 		margin-top: 55px
-		
+
 		h2
 			color: $white
 			line-height: 50px
@@ -251,7 +199,7 @@ header
 			a
 				color: $purple2
 				font-weight: bold
-			
+
 footer
 	background: $gray2
 	color: $white

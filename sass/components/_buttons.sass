@@ -1,0 +1,35 @@
+//Botões
+.button
+	text-decoration: none
+	color: #fff
+	background: linear-gradient($purple1, $purple)
+	border: 1px solid $purple
+	font-weight: bold
+	font-size: 1.2em
+	padding: 10px 25px
+	border-radius: 5px
+	display: block
+
+	text-align: center
+	margin: 30px auto
+
+	@media screen and (min-width: $tablets)
+		margin: 30px 0px
+		max-width: 250px
+	&:hover
+		text-decoration: none
+		background: linear-gradient($purple, $purple1)
+		color: $white
+
+.button-gray
+
+	color: $purple
+	background: linear-gradient($white, $gray1)
+	border: 1px solid $gray1
+
+	&:hover
+		text-decoration: none
+		background: linear-gradient($gray1, $white)
+		color: $purple
+*
+	font-family: 'Open Sans', sans-serif

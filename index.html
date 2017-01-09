@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/home.css">
 	<link rel="stylesheet" href="css/imgs.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.min.css">
 </head>
 <body>
 	<header >
@@ -38,13 +39,13 @@
 			</div>
 		</div>
 	</header>
-
+	
 	<main role="main">
 		<div id="overview">
 			<div class="container">
 				
 				<div class="col-md-6">
-					<img class="admirada-logo" src="img/img-admirada.png" alt="Admirada logomarca">
+					<img class="admirada-logo animated" src="img/img-admirada.png" alt="Admirada logomarca">
 				</div>
 				<div class="col-md-6">
 					<h1>Faça de sua marca <strong>admirada</strong></h1>
@@ -90,7 +91,7 @@
 					<a href="#" class="button button-m">Torne-se já</a>
 				</div>
 				<div class="col-md-6">
-					<img class="img-tools img-responsive" src="img/img-tools.png" alt="Imagem ilustrativa">
+					<img class="img-tools animated img-responsive" src="img/img-tools.png" alt="Imagem ilustrativa">
 				</div>
 			</div>
 		</div>
@@ -122,5 +123,27 @@
 
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	
+	<!-- Waypoints codes-->
+	<script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+		
+	<script>
+
+		$('.admirada-logo').css('opacity', 0);
+		$('.img-tools').css('opacity', 0);
+		$('.admirada-logo').waypoint(function(){
+			$('.admirada-logo').addClass('fadeInLeft');
+		}, {offset : '50%'});
+		$('.img-tools').waypoint(function(){
+			$('.img-tools').addClass('fadeInLeft');
+		}, {offset : '50%'});
+
+		$('#menu li a').on('click', function(){
+			$('li a.active').removeClass('active');
+			$(this).addClass('active');
+		});
+
+
+	</script>
 </body>
 </html>
