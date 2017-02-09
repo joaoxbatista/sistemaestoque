@@ -2,10 +2,10 @@
 .button
 	text-decoration: none
 	color: #fff
-	background: linear-gradient($purple1, $purple)
-	border: 1px solid $purple
+	background: linear-gradient($primary, $secondary)
+	border: 1px solid $primary
 	font-weight: bold
-	font-size: 1.2em
+	font-size: 16px
 	padding: 10px 25px
 	border-radius: 5px
 	display: block
@@ -16,10 +16,31 @@
 	@media screen and (min-width: $tablets)
 		margin: 30px 0px
 		max-width: 250px
-	&:hover
+
+	&:hover, &:focus, &:active
 		text-decoration: none
-		background: linear-gradient($purple, $purple1)
+		background: linear-gradient($secondary, $primary)
 		color: $white
+		outline: none
+
+.button-l
+	text-decoration: none
+	color: $gray2
+	background: linear-gradient($white, $gray1)
+	border: 1px solid $gray1
+	font-size: 16px
+	padding: 4px 25px
+	border-radius: 5px
+	display: inline-block
+	text-align: center
+	margin-bottom: 2px
+	min-width: 140px
+
+	&:hover, &:focus, &:active
+		text-decoration: none
+		
+		color: $primary
+		outline: none
 
 .button-gray
 
@@ -31,5 +52,22 @@
 		text-decoration: none
 		background: linear-gradient($gray1, $white)
 		color: $purple
-*
-	font-family: 'Open Sans', sans-serif
+
+.btn-action
+
+	text-decoration: none
+	color: $secondary
+	float: right
+	font-weight: bold
+	background: $white
+	height: 16px
+	width: 16px
+	text-align: center
+	line-height: 12px
+	border-radius: 50%
+	font-size: 12px
+	border: 2px solid $secondary
+
+	&:hover, &:active, &:focus
+		text-decoration: none
+		color: $secondary

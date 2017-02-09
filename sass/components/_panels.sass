@@ -1,0 +1,36 @@
+.panel
+	border: 2px solid $gray
+	border-top: none
+
+	.panel-heading
+		border-bottom: 2px solid $secondary
+		background: $primary
+		color: $white
+		font-size: 16px
+		
+
+	.panel-body
+		padding: 20px 30px
+
+		nav
+			list-style: none
+			
+			li
+				padding-left: 0px
+				margin-bottom: 10px
+				a
+					text-decoration: none
+					color: $primary
+					display: block
+
+					&::before
+
+						content: ''
+						display: inline-block
+						width: 5px 
+						height: 5px
+						background: $primary
+						margin-bottom: 2px
+						margin-right: 5px
+						border-radius: 50%
+

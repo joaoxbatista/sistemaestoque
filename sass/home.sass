@@ -1,208 +1,35 @@
 @import 'variables/colors'
 @import 'variables/sizes'
 @import 'components/buttons'
+@import 'components/titles'
+@import 'components/panels'
+@import 'components/inputs'
+@import 'components/header'
+@import 'components/footer'
 
-header
+*
+	font-family: 'Open Sans', sans-serif
 
-	#brand
-		background: linear-gradient($white, $gray)
-		border-bottom: 1px solid  $gray1
-		padding: 20px 0px
+main
+	min-height: calc(100vh - 118px)
 
-		#logo
-			margin: 0 auto
-			@media screen and(min-width: $tablets)
-				margin: 0px
-
-		#login
-			font-size: 1em
-			font-weight: bold
-			text-align: center
-			padding-top: 10px
-			color: $gray2
-			a
-				text-decoration: none
-				color: $purple
-				font-size: 1.1em
-	#menu
-
-		min-width: 100%
-		padding: 10px 0px
-		border-bottom: 1px solid $gray1
-		nav
-			ul
-				list-style: none
-				padding-left: 0px
-
-				.active
-					border-bottom: 2px solid $purple
-				li
-					display: block
-					font-size: 1.1em
-					padding: 8px 10px
-					text-align: center
-
-					@media screen and (min-width: $tablets)
-						display: inline-block
-
-
-
-					a
-						text-decoration: none
-						color: $gray2
-						font-weight: bold
 
 
 #overview
 	padding: 150px 0px
 	color: $gray2
-	background: linear-gradient(rgba($white, .4), $white), url(../img/bg-header.jpg)
-	background-repeat: center center no-repeat
-	background-size: cover
 	h1
 		font-size: 3em
 		line-height: 1.5em
 		font-weight: bold
 		text-align: center
-		color: $purple
-		text-shadow: 0px 0px 3px rgba(0, 0, 0, .3)
-
+		color: $primary
 		@media screen and (min-width: $tablets)
 			text-align: left
 	p
-		font-size: 1.4em
-		text-align: justify
-
-	.admirada-logo
-		margin: 0 auto 50px auto
-		display: block
-
-		@media screen and (min-width: $tablets)
-			margin-top: 100px
-			margin-left: 20%
-#whatuse
-	background: $purple3
-	position: relative
-	padding: 100px 0px
-
-	h1
-		font-size: 3em
-		line-height: 1.5em
-		font-weight: bold
-		text-align: center
-		display: block
-		margin-bottom: 70px
-		color: $gray1
-
-		@media screen and(min-width: $desktops)
-			text-align: left
-
-	.box
-
-		h2
-
-			font-size: 2.2em
-			text-align: center
-			color: $gray1
-			.sprite
-				display: block
-				margin: 20px auto
-
-			@media screen and (min-width: $desktops)
-				position: relative
-				display: inline-block
-				padding-bottom: 30px
-				margin-left: 70px
-
-				.sprite
-					position: absolute
-					left: -80px
-					top: -35px
-		p
-			font-size: 1.2em
-			text-align: justify
-			color: $gray1
-
-#operation
-	position: relative
-	padding: 100px 0px
-
-	h1
-		font-size: 3em
-		line-height: 1.5em
-		font-weight: bold
-		display: block
-		margin-bottom: 30px
-		color: $gray2
-		text-align: center
-
-		@media screen and (min-width: $tablets)
-			text-align: left
-
-	p
-		font-size: 1.4em
-		text-align: justify
-		color: $gray2
-
-	.img-tools
-		margin-top: 50px
-
-		@media screen and (min-width: $tablets)
-			margin-left: 10%
-#tobepart
-	background: $bluedark
-	padding: 100px 0px
-
-	h1
-		font-size: 3em
-		line-height: 1.5em
-		font-weight: bold
-		display: block
-		margin-bottom: 30px
-		color: $white
-		text-align: center
+		font-size: 16px
 		line-height: 20px
-
-		@media screen and (min-width: $tablets)
-			text-align: left
-	h2
-		color: $white
-		line-height: 50px
-		text-align: center
-
-		@media screen and (min-width: $tablets)
-			text-align: left
-	p
-		color: $white
-		font-size: 1.4em
 		text-align: justify
+		color: $primary
 
-		@media screen and (min-width: $tablets)
-			max-width: 90%
 
-	.contact
-		margin-top: 55px
-
-		h2
-			color: $white
-			line-height: 50px
-			text-align: center
-
-			@media screen and (min-width: $tablets)
-				text-align: left
-		ul
-			color: $white
-			font-size: 1.4em
-			padding-left: 0px
-			list-style: none
-
-			a
-				color: $purple2
-				font-weight: bold
-
-footer
-	background: $gray2
-	color: $white
-	font-size: 1.2em
-	padding: 10px 0px
-	text-align: center

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES Hydrax - Dashboard</title>
+    <link rel="stylesheet" href="../../css/autoload.css">
+    <link rel="stylesheet" href="../../css/dashboard.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav role="navigation" id="menu">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="login.html">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main role="main">
+        <div class="title"> <a href="index.html">ES Hydrax</a> > Dashboard </div>
+        <div class="container-fluid">
+
+            <!-- Side Menu -->
+            <div class="col-md-2" id="side-menu">
+                <!-- Menu de Produtos -->
+                <div class="row">
+                    <div id="produtos" class="panel">
+                        <div class="panel-heading"> Menu de Produtos <a href="#" class="btn-action">-</a> </div>
+                        <div class="panel-body">
+                            <nav>
+                              
+                                <li><a href="products/registro.html">Registro</a></li>
+                                <li><a href="products/relatorios.html">Relatórios</a></li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu de Clientes -->
+                <div class="row">
+                    <div id="produtos" class="panel">
+                        <div class="panel-heading"> Menu de Clientes <a href="#" class="btn-action">-</a> </div>
+                        <div class="panel-body">
+                            <nav>
+                                <li><a href="clients/registro.html">Registro</a></li>
+                                <li><a href="clients/pagamentos.html">Pagamentos</a></li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu de Vendedores -->
+                <div class="row">
+                    <div id="produtos" class="panel">
+                        <div class="panel-heading"> Menu de Vendedores <a href="#" class="btn-action">-</a> </div>
+                        <div class="panel-body">
+                            <nav>
+                                <li><a href="sellers/registro.html">Registro</a></li>
+                                <li><a href="sellers/relatorios.html">Relatórios</a></li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu de Fornecedores -->
+                <div class="row">
+                    <div id="produtos" class="panel">
+                        <div class="panel-heading"> Menu de Fornecedores <a href="#" class="btn-action">-</a> </div>
+                        <div class="panel-body">
+                            <nav>
+                                <li><a href="providers/registro.html">Registro</a></li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Fim Side Menu -->
+            
+            <!-- Content -->
+            <div class="col-md-10" id="content">
+				<!-- Produtos -->
+                <div class="row box-dash">
+               		<h3>Produtos</h3>
+                	<table id="list-products" class="table table-stripped table-bordered">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Nome</th>
+								<th>Preço</th>
+								<th>Quantidade</th>
+								<th>Fornecedor</th>
+								<th width="10%">Ações</th>
+							</tr>
+						</thead>
+						<tbody> 
+							<tr>
+								<td>1</td>
+								<td>Farinha de milho</td>
+								<td>R$100</td>
+								<td>100</td>
+								<td>Farinhas do nordeste</td>
+								<td>
+									<a href="#" class="button-l">Entrada</a>
+									<a href="#" class="button-l">Atualizar</a>
+									<a href="#" class="button-l">Deletar</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- Produtos -->
+                
+                <!-- Pedidos -->
+           		<div class="row box-dash">
+               		<h3>Pedidos</h3>
+                	<table id="list-orders" class="table table-stripped table-bordered">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Data de Pedido</th>
+								<th>Produtos</th>
+								<th>Cliente</th>
+								<th>Vendedor</th>
+                                <th>Total</th>
+								<th width="10%">Ações</th>
+							</tr>
+						</thead>
+						<tbody> 
+							<tr>
+                                <td>1</td>
+								<td>00/00/00</td>
+								<td>
+                                    <ul>    
+                                        <li>4 Farinha de Trigo</li>
+                                        <li>6 Farinha de Mandióca</li>
+                                        
+                                    </ul>                        
+                                </td>
+								<td>José Marcos da Silva</td>
+                                <td>Marina Tereza Oliveira</td>
+								<td>R$200,50</td>
+								<td>
+									<a href="#" class="button-l">Confirmar</i></a>
+
+                                    <a href="#" class="button-l">Cancelar</span></a>
+
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- Pedidos -->
+                
+                <!-- Clientes -->
+           		<div class="row box-dash">
+               		<h3>Clientes</h3>
+                	<table id="list-clients" class="table table-stripped table-bordered">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Nome</th>
+								<th>E-mail</th>
+                                <th>Cidade</th>
+								<th>Endereço</th>
+                                <th>Telefone</th>
+								<th>Limite de Compra</th>
+								<th width="10%">Ações</th>
+							</tr>
+						</thead>
+						<tbody> 
+							<tr>
+								<td>1</td>
+								<td>João Batista</td>
+								<td>jhonxbatista@gmail.com</td>
+                                <td>Coité do Nóia</td>
+								<td>Pç. Antônio Pedr de Albuquerque</td>
+                                <td>981413960</td>
+								<td>R$3.000</td>
+								<td>
+									<a href="#" class="button-l">Editar</a>
+									<a href="#" class="button-l">Deletar</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- Clientes -->
+
+                <!-- Fornecedores -->
+                <div class="row box-dash">
+                    <h3>Fornecedores</h3>
+                    <table id="list-providers" class="table table-stripped table-bordered">
+
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>CNPJ</th>
+                                <th>Nome</th>
+                                <th>Cidade</th>
+                                <th>Endereço</th>
+                                <th>E-mail</th>
+                                <th>Telefone</th>
+                                <th width="10%">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody> 
+                            <tr>
+                                <td>1</td>
+                                <td>123124123</td>
+                                <td>Empresa de exemplo</td>
+                                <td>Coité do Nóia</td>
+                                <td>Pç. Antônio Pedr de Albuquerque</td>
+                                <td>empresa@gmail.com</td>
+                                <td>123124123</td>
+                                <td>
+                                    <a href="#" class="button-l">Editar</a>
+                                    <a href="#" class="button-l">Deletar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- Clientes -->
+
+            </div> <!-- Fim Content -->
+
+        </div>
+    </main>
+    <footer role="complementary">
+        <p><strong>&copy; SE Hydrax </strong> - Todos os direitos reservados - 2017</p>
+    </footer>
+
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../bower_components/dynatable/jquery.dynatable.js">
+    </script>
+    <script>
+        $('#list-products').dynatable();
+		$('#list-orders').dynatable();
+        $('#list-clients').dynatable();
+		$('#list-providers').dynatable();
+    </script>
+    <script src="../../js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+tr
+  th
+    a
+      color: $gray2
+.dynatable-search
+  float: right
+  margin-bottom: 10px
+  color: $primary
+  input[type='search']
+    border: none
+    border: 1px solid $gray1
+    padding: 4px 6px
+    border-radius: 5px
+    color: $gray2
+    
+    &:focus
+      outline: none
+
+.dynatable-pagination-links
+  float: right
+
+.dynatable-record-count
+  display: block
+  padding: 5px 0
+
+.dynatable-pagination-links
+  span, li
+    display: inline-block
+
+.dynatable-page-link, .dynatable-page-break
+  display: block
+  padding: 5px 7px
+
+.dynatable-page-link
+  cursor: pointer
+
+.dynatable-active-page, .dynatable-disabled-page
+  cursor: text
+
+.dynatable-active-page:hover, .dynatable-disabled-page:hover
+  text-decoration: none
+
+.dynatable-active-page
+  background: $primary
+  border-radius: 5px
+  color: #fff
+  &:hover
+    color: #fff
+
+.dynatable-disabled-page
+  background: none
+  color: #999
+  &:hover
+    background: none
+    color: #999

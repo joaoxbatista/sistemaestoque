@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES Hydrax - Cadstro de Produtos</title>
+    <link rel="stylesheet" href="../../../css/autoload.css">
+    <link rel="stylesheet" href="../../../css/dashboard.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav role="navigation" id="menu">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="login.html">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main role="main">
+        <div class="title"> <a href="index.html">ES Hydrax</a> > <a href="../dashboard.html">Dashboard</a> > Cadastro de Produtos </div>
+        
+        <div class="container-fluid">
+            <!-- Side Menu -->
+            <div class="col-md-2" id="side-menu">
+                <!-- Menu de Produtos -->
+                <div class="row">
+                    <div id="produtos" class="panel">
+                        <div class="panel-heading"> Menu de Produtos <a href="#" class="btn-action">-</a> </div>
+                        <div class="panel-body">
+                            <nav>
+                              
+                                <li><a href="products/registro.html">Registro</a></li>
+                                <li><a href="products/relatorios.html">Relatórios</a></li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu de Clientes -->
+                <div class="row">
+                    <div id="produtos" class="panel">
+                        <div class="panel-heading"> Menu de Clientes <a href="#" class="btn-action">-</a> </div>
+                        <div class="panel-body">
+                            <nav>
+                                <li><a href="clients/registro.html">Registro</a></li>
+                                <li><a href="clients/pagamentos.html">Pagamentos</a></li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu de Vendedores -->
+                <div class="row">
+                    <div id="produtos" class="panel">
+                        <div class="panel-heading"> Menu de Vendedores <a href="#" class="btn-action">-</a> </div>
+                        <div class="panel-body">
+                            <nav>
+                                <li><a href="sellers/registro.html">Registro</a></li>
+                                <li><a href="sellers/relatorios.html">Relatórios</a></li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu de Fornecedores -->
+                <div class="row">
+                    <div id="produtos" class="panel">
+                        <div class="panel-heading"> Menu de Fornecedores <a href="#" class="btn-action">-</a> </div>
+                        <div class="panel-body">
+                            <nav>
+                                <li><a href="providers/registro.html">Registro</a></li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Fim Side Menu -->
+
+            <div class="col-md-10" id="content">
+               <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3>Cadastro de Produtos</h3>
+                </div>
+                <div class="panel-body">
+                    <form action="{{ route('products.register') }}" method="post">
+
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="">Nome</label>
+                                <input type="text" class="form-control" name="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Fornecedor</label>
+                                <select name="provider_id" class="form-control">
+                                    <option value="">Selecione um fornecedor</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="">Medida</label>
+                                <input type="text" class="form-control" name="size">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Preço</label>
+                                <input type="text" class="form-control" name="price">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Quantidade</label>
+                                <input type="text" class="form-control" name="quantity">
+                            </div>
+
+                        </div>
+                        <button type="submit" class="btn button-l"> Registrar </button>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </main>
+    <footer role="complementary">
+        <p><strong>&copy; SE Hydrax </strong> - Todos os direitos reservados - 2017</p>
+    </footer>
+    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../../bower_components/dynatable/jquery.dynatable.js">
+    </script>
+    <script>
+        $('#list-products').dynatable();
+        $('#list-orders').dynatable();
+        $('#list-clients').dynatable();
+    </script>
+    <script src="../../../js/dashboard.js"></script>
+</body>
+
+</html>
