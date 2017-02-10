@@ -1,20 +1,21 @@
 .panel
-	border: 2px solid $gray
+	border: 1px solid $primary
 	border-top: none
+	box-shadow: none
 
 	.panel-heading
 		border-bottom: 2px solid $secondary
 		background: $primary
 		color: $white
 		font-size: 16px
-		
+
 
 	.panel-body
 		padding: 20px 30px
 
 		nav
 			list-style: none
-			
+
 			li
 				padding-left: 0px
 				margin-bottom: 10px
@@ -27,10 +28,22 @@
 
 						content: ''
 						display: inline-block
-						width: 5px 
+						width: 5px
 						height: 5px
 						background: $primary
 						margin-bottom: 2px
 						margin-right: 5px
 						border-radius: 50%
+.panel-primary
+	border: 1px solid $gray
+	border-radius: 5px
+	box-shadow: none
 
+	.panel-heading
+		border-radius: 5px 5px 0px 0px
+		background: $green1
+		color: $white
+
+
+		h3
+			font-weight: bold

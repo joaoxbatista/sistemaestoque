@@ -19,7 +19,7 @@
 
 	&:hover, &:focus, &:active
 		text-decoration: none
-		background: linear-gradient($secondary, $primary)
+		background: linear-gradient($primary, $secondary)
 		color: $white
 		outline: none
 
@@ -38,7 +38,7 @@
 
 	&:hover, &:focus, &:active
 		text-decoration: none
-		
+
 		color: $primary
 		outline: none
 
@@ -71,3 +71,27 @@
 	&:hover, &:active, &:focus
 		text-decoration: none
 		color: $secondary
+
+.btn
+	border-radius: 5px
+	min-width: 140px
+	color: $white
+	border: 1px solid $gray2
+	border-bottom: 3px solid $gray2
+	font-weight: bold
+
+.btn-success
+	background: $green
+	border-color: $green1
+
+	&:hover, &:active
+		background: $green1
+		border-color: $green
+
+
+.btn-primary
+	border-color: $blue
+.btn-warning
+	border-color: $yellow
+.btn-danger
+	border-color: $red
